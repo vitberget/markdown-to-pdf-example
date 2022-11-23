@@ -1,0 +1,15 @@
+pandoc markdown-example.md -o markdown-example.pdf \
+                 --pdf-engine=xelatex \
+                 --var geometry:a4paper \
+                 --var geometry:top=3cm \
+                 --var geometry:left=2cm \
+                 --var geometry:right=2cm \
+                 --var geometry:bottom=3cm \
+                 --var mainfont="DejaVu Serif" \
+                 --var monofont="DejaVu Sans Mono" \
+                 -H md2pdf.tex \
+                 --highlight-style pygments.theme \
+                 -V colorlinks=true \
+                 -V linkcolor=blue \
+                 -V urlcolor=blue \
+                 -V toccolor=blue \
